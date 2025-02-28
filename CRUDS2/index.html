@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Cruds</title>
+</head>
+<body>
+    
+    <section>
+        <header>
+            <h2>cruds</h2>
+            <p>product managment system</p>
+        </header>
+        <div class="inputs">
+            <input type="text" name="" id="title" placeholder="title"class="info">
+            <div class="price-process">
+                <input onkeyup="getTotalPrice()" type="phone"  id="price"placeholder="price"class="info">
+                <input onkeyup="getTotalPrice()" type="phone"  id="taxes"placeholder="taxes"class="info">
+                <input onkeyup="getTotalPrice()" type="phone" id="ads"placeholder="ads"class="info">
+                <input onkeyup="getTotalPrice()" type="phone" id="discount"placeholder="discount"class="info">
+                <label id="total"></label>
+            </div>
+            <input type="text" name="" id="count"placeholder="count"class="info">
+            <input type="text" name="" id="category"placeholder="category"class="info">
+            <button id="create">create</button>
+
+        </div>
+        <div class="search">
+            <input onkeyup="getMood(this.value)" type="text"placeholder="search"id="search-field">
+            <div class="search-types">
+                <button id="search-by-title"onclick="search(this.id)">search by title</button>
+                <button id="search-by-category"onclick="search(this.id)">search by category</button>
+            </div>
+        </div>
+        <div id="deleteall"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+        </table>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
